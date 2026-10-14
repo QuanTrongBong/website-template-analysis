@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bài thực hành phân tích và xây dựng cấu trúc website template.">
+  <title>Northstar — Phân tích cấu trúc website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Northstar, về đầu trang">
+      <span class="brand__symbol" aria-hidden="true">N</span>
+      <span>northstar<span class="brand__period">.</span></span>
+    </a>
+    <p class="site-header__note">Ý tưởng số, dành cho mọi người.</p>
+  </header>
+
+  <nav class="site-nav" aria-label="Điều hướng chính">
+    <ul class="site-nav__list">
+      <li><a class="site-nav__link site-nav__link--active" href="#top">Trang chủ</a></li>
+      <li><a class="site-nav__link" href="#about">Giới thiệu</a></li>
+      <li><a class="site-nav__link" href="#ideas">Ý tưởng</a></li>
+      <li><a class="site-nav__link" href="#contact">Liên hệ</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__content">
+        <p class="eyebrow"><span class="eyebrow__mark" aria-hidden="true"></span> KHÔNG GIAN SÁNG TẠO</p>
+        <h1 id="hero-title">Chào mừng<br>đến với Northstar.</h1>
+        <p class="hero__description">Khám phá những ý tưởng hữu ích, công cụ dễ dùng và câu chuyện truyền cảm hứng cho hành trình số của bạn.</p>
+        <a class="text-link" href="#about">Tìm hiểu thêm <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="hero__art" aria-hidden="true">
+        <div class="hero__orbit hero__orbit--outer"></div>
+        <div class="hero__orbit hero__orbit--inner"></div>
+        <div class="hero__star">N</div>
+        <span class="hero__spark hero__spark--one">✳</span>
+        <span class="hero__spark hero__spark--two">✦</span>
+      </div>
+      <span class="hero__index" aria-hidden="true">01 / KHÁM PHÁ</span>
+    </section>
+
+    <section class="intro content-width" id="about" aria-labelledby="intro-title">
+      <div class="intro__heading">
+        <p class="eyebrow eyebrow--dark">MỘT ĐIỂM BẮT ĐẦU TỐT</p>
+        <h2 id="intro-title">Thiết kế rõ ràng.<br><span>Trải nghiệm gần gũi.</span></h2>
+      </div>
+      <div class="intro__copy">
+        <p>Một website dễ dùng giúp mọi người tìm thấy điều họ cần. Chúng tôi tin rằng cấu trúc tốt, nội dung hữu ích và thiết kế có chủ đích sẽ tạo nên trải nghiệm trực tuyến tích cực.</p>
+        <a class="text-link text-link--dark" href="#ideas">Khám phá các chủ đề <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+    <section class="ideas content-width" id="ideas" aria-labelledby="ideas-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow eyebrow--dark">NỘI DUNG NỔI BẬT</p>
+          <h2 id="ideas-title">Bắt đầu từ điều<br><span>bạn quan tâm.</span></h2>
+        </div>
+        <p class="section-heading__note">Ba hướng khám phá giúp bạn đi tiếp theo cách của riêng mình.</p>
+      </div>
+      <div class="idea-grid">
+        <article class="idea-card">
+          <span class="idea-card__number">01</span>
+          <div class="idea-card__icon idea-card__icon--green" aria-hidden="true">↗</div>
+          <h3>Công nghệ hữu ích</h3>
+          <p>Tìm hiểu những công cụ giúp công việc và cuộc sống trở nên đơn giản hơn.</p>
+          <a href="#contact" aria-label="Tìm hiểu công nghệ hữu ích">Khám phá <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="idea-card">
+          <span class="idea-card__number">02</span>
+          <div class="idea-card__icon idea-card__icon--violet" aria-hidden="true">✳</div>
+          <h3>Quyền riêng tư</h3>
+          <p>Những gợi ý thiết thực để bạn chủ động hơn trong không gian trực tuyến.</p>
+          <a href="#contact" aria-label="Tìm hiểu quyền riêng tư">Khám phá <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="idea-card">
+          <span class="idea-card__number">03</span>
+          <div class="idea-card__icon idea-card__icon--orange" aria-hidden="true">◎</div>
+          <h3>Cộng đồng sáng tạo</h3>
+          <p>Gặp gỡ những ý tưởng và câu chuyện tạo cảm hứng cho ngày mới.</p>
+          <a href="#contact" aria-label="Tìm hiểu cộng đồng sáng tạo">Khám phá <span aria-hidden="true">→</span></a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="site-footer__main content-width">
+      <div class="site-footer__about">
+        <a class="brand brand--footer" href="#top">
+          <span class="brand__symbol" aria-hidden="true">N</span>
+          <span>northstar<span class="brand__period">.</span></span>
+        </a>
+        <p>Ý tưởng tốt có thể mở ra<br>những hành trình mới.</p>
+      </div>
+      <div class="site-footer__column">
+        <h2>Khám phá</h2>
+        <a href="#about">Giới thiệu</a>
+        <a href="#ideas">Các chủ đề</a>
+      </div>
+      <div class="site-footer__column">
+        <h2>Kết nối</h2>
+        <a href="mailto:hello@northstar.example">hello@northstar.example</a>
+        <a href="#contact">Câu hỏi thường gặp</a>
+      </div>
+    </div>
+    <div class="site-footer__bottom content-width">
+      <p>© 2026 Northstar. Bảo lưu mọi quyền.</p>
+      <p>Thiết kế với sự quan tâm <span aria-hidden="true">✳</span></p>
+    </div>
+  </footer>
+</body>
+</html>
